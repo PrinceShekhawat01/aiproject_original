@@ -1,0 +1,110 @@
+/* main.css */
+
+/* ✅ Basic Layout & Styling */
+body {
+    background-image: linear-gradient(135deg,rgb(127, 223, 208),rgb(154, 154, 231));
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100dvw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    overflow: hidden;
+}
+
+#main {
+    background-image: linear-gradient(135deg,rgb(127, 223, 208),rgb(154, 154, 231));
+    /* box-shadow: 0px 0px 15px rgb(0, 0, 0); */
+    border-radius: 15px;
+    padding: 20px;
+    width:100%;
+    text-align: center;
+    position: relative;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+
+/* ✅ Styling for Timer & Status */
+#time {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#status01 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* ✅ Button Styles */
+button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* ✅ History Section */
+#history {
+    max-height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* border-top: 1px solid #ddd; */
+    /* margin-top: 10px; */
+    /* padding-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+/* ✅ Reset Button */
+#reset {
+    display: none;
+    margin-top: 10px;
+}
+
+/* ✅ Graph Container */
+#historyGraph {
+    width:100%;
+    height: 20rem;
+    margin-top: 2em;
+    /* background: #f9f9f9; */
+    border-radius: 12px;
+    padding: 10px;
+    background-image: linear-gradient(135deg,rgb(127, 223, 208),rgb(154, 154, 231));
+}
+
+.status{
+    background-image: linear-gradient(135deg,rgb(127, 223, 208),rgb(154, 154, 231));
+    color: darkblue;
+    margin-top: 1em;
+}
+/* ✅ Animations for Alerts */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.alert {
+    animation: fadeIn 0.5s ease-in-out;
+    margin-top: 10px;
+}
